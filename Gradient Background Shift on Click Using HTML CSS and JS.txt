@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            transition: background 1s ease;
+            background: linear-gradient(45deg, #ff0066, #6600ff);
+        }
+        h3 {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+
+<h3>Click Anywhere</h3>
+
+
+<script>
+    function randomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
+    document.body.addEventListener('click', () => {
+        const color1 = randomColor();
+        const color2 = randomColor();
+        document.body.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+    });
+</script>
+
+
+</body>
+</html>

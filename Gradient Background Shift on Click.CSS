@@ -1,0 +1,15 @@
+body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            transition: background 1s ease;
+            background: linear-gradient(45deg, #ff0066, #6600ff);
+        }
+        h3 {
+            color: white;
+            font-size: 2rem;
+        }
+    
